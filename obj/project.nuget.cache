@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "U08TbSDdXWsmRwntBzBFRNFOp5BqOoYkC8cEYTWmrPU2lGZLf552ADLeBPITganBQ+V3AajuzoQ/G84RscR9tA==",
+  "success": true,
+  "projectFilePath": "F:\\Legacy\\MyProjects\\SPTOOLS_NEW\\REW Craft Tools\\REWJUNO\\REWJUNO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

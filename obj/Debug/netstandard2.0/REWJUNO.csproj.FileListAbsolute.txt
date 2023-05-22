@@ -1,0 +1,9 @@
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\bin\Debug\netstandard2.0\REWJUNO.deps.json
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\bin\Debug\netstandard2.0\REWJUNO.dll
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\bin\Debug\netstandard2.0\REWJUNO.pdb
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\obj\Debug\netstandard2.0\REWJUNO.AssemblyInfoInputs.cache
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\obj\Debug\netstandard2.0\REWJUNO.AssemblyInfo.cs
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\obj\Debug\netstandard2.0\REWJUNO.csproj.CoreCompileInputs.cache
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\obj\Debug\netstandard2.0\REWJUNO.dll
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\obj\Debug\netstandard2.0\REWJUNO.pdb
+F:\Legacy\MyProjects\SPTOOLS_NEW\REW Craft Tools\REWJUNO\obj\Debug\netstandard2.0\REWJUNO.csprojAssemblyReference.cache
