@@ -1274,6 +1274,31 @@ namespace REWVIZZY
         }
     }
 
+    public class FlightLogInstruction : VzInstruction
+    {
+        public VzExpression textParameter;
+        public VzExpression overrideParameter;
+
+        public FlightLogInstruction(VzExpression text, VzExpression isOverride)
+        {
+            textParameter = text;
+            overrideParameter = isOverride;
+        }
+
+        public override XElement Serialize()
+        {
+            XElement xLog = new XElement("LogFlight",
+                new XAttribute("id", this.id),
+                new XAttribute("style", "flightlog")
+                );
+
+            xLog.Add(textParameter.Serialize());
+            xLog.Add(overrideParameter.Serialize());
+            return xLog;
+        }
+    }
+
+
 
 
     // **************************** 变量指令 ***********************
@@ -1534,11 +1559,11 @@ namespace REWVIZZY
             if (!isConstant) throw new VizzyException("this Vec3 Is Not Constant");
 
             string result = "(";
-            result += x.ToString();
+            result += ((float)(x as Constant).value).ToString();
             result += ", ";
-            result += y.ToString();
+            result += ((float)(y as Constant).value).ToString();
             result += ", ";
-            result += z.ToString();
+            result += ((float)(z as Constant).value).ToString();
             result += ")";
             return (result);
         }

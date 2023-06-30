@@ -622,6 +622,29 @@ namespace REWVIZZY
     }
 
 
+    public class RaycastExpression : VzExpression
+    {
+        VzExpression origin;
+        VzExpression direction;
+
+        public RaycastExpression(VzExpression origin, VzExpression direction)
+        {
+            this.origin = origin;
+            this.direction = direction;
+        }
+
+        public override XElement Serialize()
+        {
+            XElement xConvert = new XElement("CraftProperty",
+                new XAttribute("property", "Raycast"),
+                new XAttribute("style", "raycast-query")
+                );
+
+            xConvert.Add(origin.Serialize());
+            xConvert.Add(direction.Serialize());
+            return xConvert;
+        }
+    }
 
 
 

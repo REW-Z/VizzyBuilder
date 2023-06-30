@@ -45,7 +45,6 @@ namespace REWVIZZY
         }
 
 
-
         /// <summary>
         /// 声明全局变量
         /// </summary>
@@ -466,6 +465,11 @@ namespace REWVIZZY
             return new LogInstruction(text).AppendToCurrentContext();
         }
 
+        public static VzInstruction FlightLog(VzExpression text, VzExpression isoverride)
+        {
+            return new FlightLogInstruction(text, isoverride).AppendToCurrentContext();
+        }
+
         public static VzInstruction Broadcast(BroadCastType type, VzExpression msg, VzExpression data)
         {
             return new BroadcastInstruction(type, msg, data).AppendToCurrentContext();
@@ -800,6 +804,10 @@ namespace REWVIZZY
         public static VzExpression TerrainQuery(TerrainPropertyType property, VzExpression location)
         {
             return new TerrainPropertyExpression(property, location);
+        }
+        public static VzExpression Raycast(VzExpression origin, VzExpression direction)
+        {
+            return new RaycastExpression(origin, direction);
         }
         public static VzExpression PlanetProperty(VzExpression planet, PlanetPropertyType property)
         {
@@ -1423,6 +1431,14 @@ namespace REWVIZZY
         public static VzExpression GetProperty(CraftBasePropertyType property)
         {
             return Vz.GetCraftBaseProperty(property);
+        }
+    }
+
+    public class VzPhysics
+    {
+        public static VzExpression Raycast(VzExpression origin, VzExpression direction)
+        {
+            return Vz.Raycast(origin, direction);
         }
     }
 
